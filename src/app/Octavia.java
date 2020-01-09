@@ -19,19 +19,20 @@ public class Octavia extends Car {
         int newVelocity = getCurrentVelocity() + rate;
         if (newVelocity == 0) {
             stop();
+            changeGear(1);
         } else {
             if (newVelocity > 0 && newVelocity <= 10) {
-                chagneGear(1);
+                changeGear(1);
             } else if (newVelocity > 10 && newVelocity <= 20) {
-                chagneGear(2);
+                changeGear(2);
             } else if (newVelocity > 20 && newVelocity <= 30) {
-                chagneGear(3);
+                changeGear(3);
             } else if (newVelocity > 30 && newVelocity <= 40) {
-                chagneGear(4);
+                changeGear(4);
             } else if (newVelocity > 40 && newVelocity <= 50) {
-                chagneGear(5);
+                changeGear(5);
             } else if (newVelocity > 50) {
-                chagneGear(6);
+                changeGear(6);
             }
         }
 
