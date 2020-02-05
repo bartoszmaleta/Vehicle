@@ -11,8 +11,8 @@ public class Vehicle {
         this.name = name;
         this.size = size;
 
-        this.currentVelocity = currentVelocity;
-        this.currentDirection = currentDirection;
+        this.currentVelocity = 0;
+        this.currentDirection = 0;
     }
 
     public void steer (int direction) {
